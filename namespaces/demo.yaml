@@ -1,17 +1,15 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: rabbit
+  name: ghost
   namespace: default
 spec:
-  releaseName: rabbitmq
-  targetNamespace: mq
+  releaseName: ghost
+  targetNamespace: ghost
   timeout: 300
   resetValues: false
   forceUpgrade: false
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: rabbitmq
-    version: 3.3.6
-  values:
-    replicas: 1
+    name: ghost
+    version: 9.0.3
