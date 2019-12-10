@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   releaseName: ghost
-  targetNamespace: ghost
+  targetNamespace: default
   timeout: 300
   resetValues: false
   forceUpgrade: false
